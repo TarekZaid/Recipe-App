@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Recipe Search</h1>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+      <select name="searchType">
+        <option value="ingredient">Search by Ingredient</option>
+        <option value="recipe">Search by Recipe</option>
+        <option value="recipeInfo">Get Recipe Information</option>
+      </select>
+
+      <input type="text" name="query" placeholder="Enter search term" />
+
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Random Recipe Button -->
+    <button id="randomRecipeBtn">Try something new?</button>
+
+    <!-- Table to display the search results -->
+    <table id="recipeTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Preparation Time</th>
+          <!-- Add more table headers based on the data you want to display -->
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+
+    <!-- Script to handle form submission and API response -->
+    <script src="script.js"></script>
+  </body>
+</html>
